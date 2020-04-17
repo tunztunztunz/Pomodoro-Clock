@@ -138,6 +138,7 @@ class Clock {
 
   restartClock(minutes = this.sessionTimeSelector.textContent) {
     this.playButton.classList.remove('disabled');
+    this.isPaused = false;
     clearInterval(this.countDown);
     this.setClockDisplay(minutes, '00');
   }
