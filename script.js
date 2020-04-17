@@ -61,7 +61,7 @@ class Clock {
       this.seconds = this.padZeroes(this.clock.getSeconds());
       this.setClockDisplay(this.minutes, this.seconds);
       if (this.minutes <= 0 && this.seconds <= 0) this.switchSessionBreak();
-    }, 10);
+    }, 1000);
   }
 
   setClockValues() {
